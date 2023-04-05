@@ -6,18 +6,10 @@ const compareTrue = (parametro1, parametro2) => {
     return false;
   }
 };
-const girafa = true;
-const elefante = true;
-const macaco = false;
-console.log(compareTrue(macaco, macaco));
-console.log(compareTrue(elefante, macaco));
-console.log(compareTrue(elefante, girafa));
 // Desafio 2 - Crie a função splitSentence
 const splitSentence = (frase) => frase.split(' ');
-
-console.log(splitSentence('go Trybe, beleza?'));
 // Desafio 3 - Crie a função concatName
-
+const concatName = (array) => `${array[array.length - 1]}, ${array[0]}`;
 // Desafio 4 - Crie a função footballPoints
 
 // Desafio 5 - Crie a função highestCount
