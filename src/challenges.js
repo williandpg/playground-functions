@@ -1,6 +1,6 @@
 // Desafio 1 - Crie a função compareTrue
-let compareTrue = (parametro1, parametro2) => {
-  if (parametro1 && parametro2 === true) {
+const compareTrue = (parametro1, parametro2) => {
+  if (parametro1 && parametro2) {
     return true;
   } else {
     return false;
@@ -13,7 +13,9 @@ console.log(compareTrue(macaco, macaco));
 console.log(compareTrue(elefante, macaco));
 console.log(compareTrue(elefante, girafa));
 // Desafio 2 - Crie a função splitSentence
+const splitSentence = (frase) => frase.split(' ');
 
+console.log(splitSentence('go Trybe, beleza?'));
 // Desafio 3 - Crie a função concatName
 
 // Desafio 4 - Crie a função footballPoints
