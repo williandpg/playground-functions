@@ -1,11 +1,6 @@
 // Desafio 1 - Crie a função compareTrue
-const compareTrue = (parametro1, parametro2) => {
-  if (parametro1 && parametro2) {
-    return true;
-  } else {
-    return false;
-  }
-};
+const compareTrue = (parametro1, parametro2) => (parametro1 && parametro2) ? true : false;
+console.log(compareTrue(true, false));
 // Desafio 2 - Crie a função splitSentence
 const splitSentence = (frase) => frase.split(' ');
 // Desafio 3 - Crie a função concatName
@@ -28,9 +23,21 @@ const highestCount = (array) => {
   }
   return repeticao;
 };
-console.log(highestCount([3, 3, 9, 1, 2, 3, 9, 5, 7]));
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
-
+const calcTriangleArea = (base, height) => (base * height) / 2;
+const calcRectangleArea = (base, height) => base * height;
+const calcAllAreas = (base, height, form) => {
+  if (form = 'triângulo') {
+    return `O valor da área do triângulo é de: ${calcTriangleArea}`;
+  } else if (form = 'retângulo') {
+    return `O valor da área do retângulo é de: ${calcRectangleArea}`;
+  } else {
+    return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`;
+  }
+};
+console.log(calcTriangleArea(10, 50));
+console.log(calcRectangleArea(10, 50));
+console.log(calcAllAreas(10, 50, 'triângulo'));
 // Desafio 7 - Crie a função catAndMouse
 
 // Desafio 8 - Crie a função fizzBuzz
