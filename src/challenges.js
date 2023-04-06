@@ -1,6 +1,6 @@
 // Desafio 1 - Crie a função compareTrue
-const compareTrue = (parametro1, parametro2) => (parametro1 && parametro2) ? true : false;
-console.log(compareTrue(true, false));
+const compareTrue = (parametro1, parametro2) => ((parametro1 && parametro2) ? true : false);
+console.log(compareTrue(true, true));
 // Desafio 2 - Crie a função splitSentence
 const splitSentence = (frase) => frase.split(' ');
 // Desafio 3 - Crie a função concatName
@@ -29,11 +29,10 @@ const calcRectangleArea = (base, height) => base * height;
 const calcAllAreas = (base, height, form) => {
   if (form === 'triângulo') {
     return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
-  } else if (form === 'retângulo') {
+  } if (form === 'retângulo') {
     return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
-  } else {
-    return `Não foi possível fazer o cálculo, insira uma forma geométrica válida`;
   }
+  return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
 };
 console.log(calcTriangleArea(10, 50));
 console.log(calcRectangleArea(10, 50));
@@ -42,15 +41,28 @@ console.log(calcAllAreas(10, 50, 'triângulo'));
 const catAndMouse = (mouse, cat1, cat2) => {
   if (cat2 - mouse < cat1 - mouse) {
     return 'cat2';
-  } else if (cat2 - mouse > cat1 - mouse) {
+  } if (cat2 - mouse > cat1 - mouse) {
     return 'cat1';
-  } else {
-    return 'os gatos trombam e o rato foge'
   }
+  return 'os gatos trombam e o rato foge';
 };
-console.log(catAndMouse(5, 4, 4));
+console.log(catAndMouse(5, 3, 7));
 // Desafio 8 - Crie a função fizzBuzz
-
+const fizzBuzz = (array) => {
+  let array2 = [];
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index] % 3 === 0) {
+      array2.push('fizz');
+    } else if (array[index] % 5 === 0) {
+      array2.push('buzz');
+    } else if (array[index] % 3 === 0 && array[index] % 5 === 0) {
+      array2.push('fizzBuzz');
+    } else {
+      array2.push('bug!');
+    }
+  } return array2;
+};
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
