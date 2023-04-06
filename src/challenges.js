@@ -39,14 +39,14 @@ console.log(calcRectangleArea(10, 50));
 console.log(calcAllAreas(10, 50, 'triângulo'));
 // Desafio 7 - Crie a função catAndMouse
 const catAndMouse = (mouse, cat1, cat2) => {
-  if (cat2 - mouse < cat1 - mouse) {
+  if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
     return 'cat2';
-  } if (cat2 - mouse > cat1 - mouse) {
+  } if (Math.abs(cat2 - mouse) > Math.abs(cat1 - mouse)) {
     return 'cat1';
   }
   return 'os gatos trombam e o rato foge';
 };
-console.log(catAndMouse(1, 3, 7));
+console.log(catAndMouse(7, 3, 11));
 // Desafio 8 - Crie a função fizzBuzz
 const fizzBuzz = (array) => {
   let array2 = [];
@@ -103,7 +103,10 @@ const decode = (vogal) => {
 console.log(encode('Ola tryber bom dia'));
 console.log(decode('Ol1 tryb2r b4m d31'));
 // Desafio 10 - Crie a função techList
-
+const techList = (tecnologia, nome) => {
+  
+};
+console.log(techList( , ));
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
