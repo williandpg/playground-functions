@@ -1,6 +1,5 @@
 // Desafio 1 - Crie a função compareTrue
 const compareTrue = (parametro1, parametro2) => ((parametro1 && parametro2) ? true : false);
-console.log(compareTrue(true, true));
 // Desafio 2 - Crie a função splitSentence
 const splitSentence = (frase) => frase.split(' ');
 // Desafio 3 - Crie a função concatName
@@ -34,9 +33,6 @@ const calcAllAreas = (base, height, form) => {
   }
   return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida';
 };
-console.log(calcTriangleArea(10, 50));
-console.log(calcRectangleArea(10, 50));
-console.log(calcAllAreas(10, 50, 'triângulo'));
 // Desafio 7 - Crie a função catAndMouse
 const catAndMouse = (mouse, cat1, cat2) => {
   if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
@@ -46,23 +42,21 @@ const catAndMouse = (mouse, cat1, cat2) => {
   }
   return 'os gatos trombam e o rato foge';
 };
-console.log(catAndMouse(7, 3, 11));
 // Desafio 8 - Crie a função fizzBuzz
 const fizzBuzz = (array) => {
   let array2 = [];
   for (let index = 0; index < array.length; index += 1) {
-    if (array[index] % 3 === 0) {
-      array2.push('fizz');
+    if (array[index] % 3 === 0 && array[index] % 5 === 0) {
+      array2.push('fizzBuzz');
     } else if (array[index] % 5 === 0) {
       array2.push('buzz');
-    } else if (array[index] % 3 === 0 && array[index] % 5 === 0) {
-      array2.push('fizzBuzz');
+    } else if (array[index] % 3 === 0) {
+      array2.push('fizz');
     } else {
       array2.push('bug!');
     }
   } return array2;
 };
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9 - Crie a função encode e a função decode
 const encode = (vogal) => {
   let frase = [];
@@ -100,8 +94,6 @@ const decode = (vogal) => {
     }
   } return frase.join('');
 };
-console.log(encode('Ola tryber bom dia'));
-console.log(decode('Ol1 tryb2r b4m d31'));
 // Desafio 10 - Crie a função techList
 const techList = (tecnologia, nome) => {
   
