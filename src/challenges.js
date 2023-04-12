@@ -97,7 +97,7 @@ const decode = (vogal) => {
 // Desafio 10 - Crie a função techList
 const techList = (tecnologia, nome) => {
   if (tecnologia.length === 0) {
-    return [];
+    return tecnologia;
   }
   tecnologia.sort();
   let lista = [];
@@ -109,7 +109,7 @@ const techList = (tecnologia, nome) => {
     lista.push(objeto);
   } return lista;
 };
-console.log(techList(['css', 'html'], 'will'));
+
 // Não modifique essas linhas
 module.exports = {
   calcTriangleArea: typeof calcTriangleArea === 'function' ? calcTriangleArea : (() => {}),
