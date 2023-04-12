@@ -102,11 +102,10 @@ const techList = (tecnologia, nome) => {
   tecnologia.sort();
   let lista = [];
   for (let index = 0; index < tecnologia.length; index += 1) {
-    let objeto = {
-      tech: tecnologia,
+    lista.push({
+      tech: tecnologia[index],
       name: nome,
-    };
-    lista.push(objeto);
+    });
   } return lista;
 };
 
