@@ -1,4 +1,4 @@
-# Projeto Playground Functions
+# Projeto - Playground Functions
 
 Neste projeto, fui responsável pela implementação de um conjunto de funções que resolvem problemas com respostas pré-determinadas. Como membro do time de desenvolvimento, utilizei a lógica de programação para analisar cada problema e sua resposta esperada, facilitando a criação do código de cada função. O objetivo principal foi fornecer soluções eficientes e confiáveis para os desafios propostos.
 
